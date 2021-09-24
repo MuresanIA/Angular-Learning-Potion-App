@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-success" (click)="onNewPotion()">New Potion</button>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <app-potion-item
+      *ngFor="let potionEl of potions; let i = index"
+      [potion]="potionEl"
+      [index]="i"></app-potion-item>
+  </div>
+</div>
+
